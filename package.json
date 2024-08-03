@@ -2,6 +2,7 @@
   "name": "rimworld-itemlist-sathy",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sathypoop.github.io/rimworld-shop-v2/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",

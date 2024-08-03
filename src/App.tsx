@@ -3,7 +3,7 @@ import DataTable from 'react-data-table-component';
 import dataImport from './data/StoreItems.json';
 import { useEffect, useState } from 'react';
 import StoreItem from './models/StoreItem';
-import { priceColumn, categoryColumn, nameColumn, nutritionColumn, researchColumn, damageColumn, descriptionColumn, armorColumn, hpColumn, rangeColumn, stackLimitColumn, apColumn, traitNameColumn, traitAddPriceColumn, traitRemovePriceColumn, traitConflictsColumn, traitStatsColumn } from './models/columns/columnTypes';
+import { priceColumn, categoryColumn, nameColumn, nutritionColumn, researchColumn, damageColumn, armorColumn, hpColumn, rangeColumn, stackLimitColumn, apColumn, traitNameColumn, traitAddPriceColumn, traitRemovePriceColumn, traitConflictsColumn, traitStatsColumn } from './models/columns/columnTypes';
 import UnFavIcon from './svgs/heart-minus';
 import FavIcon from './svgs/heart-plus';
 import TraitItem from './models/TraitItem';
