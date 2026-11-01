@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/rimworld-shop-v2/static/css/main.37457948.css",
-    "main.js": "/rimworld-shop-v2/static/js/main.a441a6ba.js",
+    "main.css": "/rimworld-shop-v2/static/css/main.b1291aba.css",
+    "main.js": "/rimworld-shop-v2/static/js/main.0a1b5ed3.js",
     "index.html": "/rimworld-shop-v2/index.html",
-    "main.37457948.css.map": "/rimworld-shop-v2/static/css/main.37457948.css.map",
-    "main.a441a6ba.js.map": "/rimworld-shop-v2/static/js/main.a441a6ba.js.map"
+    "main.b1291aba.css.map": "/rimworld-shop-v2/static/css/main.b1291aba.css.map",
+    "main.0a1b5ed3.js.map": "/rimworld-shop-v2/static/js/main.0a1b5ed3.js.map"
   },
   "entrypoints": [
-    "static/css/main.37457948.css",
-    "static/js/main.a441a6ba.js"
+    "static/css/main.b1291aba.css",
+    "static/js/main.0a1b5ed3.js"
   ]
 }
