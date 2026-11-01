@@ -3,7 +3,7 @@ import DataTable from 'react-data-table-component';
 import dataImport from './data/StoreItems.json';
 import { useEffect, useState } from 'react';
 import StoreItem from './models/StoreItem';
-import { priceColumn, categoryColumn, nameColumn, nutritionColumn, researchColumn, damageColumn, armorColumn, hpColumn, rangeColumn, stackLimitColumn, apColumn, traitNameColumn, traitAddPriceColumn, traitRemovePriceColumn, traitConflictsColumn, traitStatsColumn } from './models/columns/columnTypes';
+import { priceColumn, categoryColumn, nameColumn, nutritionColumn, apparelLayer, researchColumn, damageColumn, armorColumn, hpColumn, rangeColumn, stackLimitColumn, apColumn, traitNameColumn, traitAddPriceColumn, traitRemovePriceColumn, traitConflictsColumn, traitStatsColumn, cooldownColumn, longRangeAccuracyColumn, midRangeAccuracyColumn, shortRangeAccuracyColumn } from './models/columns/columnTypes';
 import UnFavIcon from './svgs/heart-minus';
 import FavIcon from './svgs/heart-plus';
 import TraitItem from './models/TraitItem';
@@ -103,7 +103,7 @@ function App() {
     },
     headCells: {
       style: {
-        color: '#DAA520',
+        color: '#20b5da',
         fontWeight: '700',
         fontSize: '20px',
         backgroundColor: '#2B2B2B',
@@ -128,24 +128,27 @@ function App() {
   const weaponColumns = [
     nameColumn,
     priceColumn,
-    damageColumn,
+    researchColumn,
+    //damageColumn,
     favColumn,
   ]
 
   const rangedWeaponColumns = [
     nameColumn,
     priceColumn,
-    damageColumn,
-    rangeColumn,
+    // damageColumn,
+    shortRangeAccuracyColumn,
+    midRangeAccuracyColumn,
+    longRangeAccuracyColumn,
+    cooldownColumn,
     researchColumn,
-    apColumn,
     favColumn,
   ]
 
   const rawResourceColumn = [
     nameColumn,
     priceColumn,
-    hpColumn,
+    // hpColumn,
     stackLimitColumn,
     favColumn
   ]
@@ -182,7 +185,8 @@ function App() {
   const clothingColumn = [
     nameColumn,
     priceColumn,
-    armorColumn,
+    //armorColumn,
+    apparelLayer,
     researchColumn,
     favColumn
   ]

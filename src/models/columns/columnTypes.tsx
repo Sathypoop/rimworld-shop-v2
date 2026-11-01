@@ -32,6 +32,14 @@ const stackLimitColumn = {
   sortable: true,
 };
 
+const cooldownColumn = {
+  name: 'Ranged cooldown',
+  selector: (row: StoreItem) => row.rangeCooldown,
+  grow: 1,
+  wrap: true,
+  sortable: true,
+};
+
 const damageColumn = {
   name: 'Damage',
   selector: (row: StoreItem) => row.damage,
@@ -79,6 +87,38 @@ const armorColumn = {
   wrap: true,
   sortable: true
 };
+
+const apparelLayer = {
+  name: 'Apparel Layer',
+  selector: (row: StoreItem) => row.apparelLayer,
+  grow: 1,
+  wrap: true,
+  sortable: true
+}
+
+const shortRangeAccuracyColumn = {
+  name: 'Short Range Accuracy',
+  selector: (row: StoreItem) => row.shortRangeAccuracy,
+  grow: 1,
+  wrap: true,
+  sortable: true
+}
+
+const midRangeAccuracyColumn = {
+  name: 'Mid Range Accuracy',
+  selector: (row: StoreItem) => row.midRangeAccuracy,
+  grow: 1,
+  wrap: true,
+  sortable: true
+}
+
+const longRangeAccuracyColumn = {
+  name: 'Long Range Accuracy',
+  selector: (row: StoreItem) => row.longRangeAccuracy,
+  grow: 1,
+  wrap: true,
+  sortable: true
+}
 
 const nutritionColumn = {
   name: 'Nutrition Value',
@@ -130,7 +170,7 @@ const traitAddPriceColumn = {
   name: 'Add Price',
   selector: (row: TraitItem) => row.addPrice,
   sortable: true,
-  grow: 1,
+  grow: 0.5,
   wrap: true,
 }
 
@@ -163,6 +203,6 @@ const traitConflictsColumn = {
   wrap: true,
 }
 
-export { traitAddPriceColumn, traitStatsColumn, traitNameColumn, traitConflictsColumn, traitRemovePriceColumn, hpColumn, rangeColumn, priceColumn, apColumn, nameColumn, researchColumn, categoryColumn, damageColumn, armorColumn, descriptionColumn, nutritionColumn, stackLimitColumn };
+export { traitAddPriceColumn, shortRangeAccuracyColumn, midRangeAccuracyColumn, longRangeAccuracyColumn, cooldownColumn, traitStatsColumn, apparelLayer, traitNameColumn, traitConflictsColumn, traitRemovePriceColumn, hpColumn, rangeColumn, priceColumn, apColumn, nameColumn, researchColumn, categoryColumn, damageColumn, armorColumn, descriptionColumn, nutritionColumn, stackLimitColumn };
 
 

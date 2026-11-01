@@ -10,9 +10,14 @@ type StoreItem = {
     armor: string | '';
     range: string | '';
     nutrition: string | '';
-    research: string;
+    research: string | '-';
     weaponDetails: string | '-';
     armorPen: string | '-';
+    apparelLayer: string | '-';
+    rangeCooldown: string | '-';
+    shortRangeAccuracy: string | '-';
+    midRangeAccuracy: string | '-';
+    longRangeAccuracy: string | '-';
 };
 
 export default StoreItem;
